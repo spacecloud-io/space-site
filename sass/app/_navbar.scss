@@ -1,0 +1,119 @@
+.navbar-color {
+  background-color: #ffffff !important;
+  .navbar-style {
+    padding: 0px 16px 0px 16px;
+    width: 100%;
+    a:hover {
+      background-color: #ffffff;
+    }
+    .spaceup-logo-style {
+      height: 24px;
+      width: 130px;
+      float: left;
+      margin-top: 15px;
+    }
+    .navbar-text-style {
+      color: black;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      padding: 0px 30px;
+    }
+    .dehaze {
+      font-size: 26px !important;
+      color: #002c39 !important;
+      cursor: pointer;
+    }
+  }
+}
+
+
+
+.sidenav {
+  border-radius: 90px 0 0 90px;
+  .sidenav-style {
+    position: relative;
+    top: 10%;
+    .sidenav-logo {
+      margin: 0 0 32px 32px;
+    }
+    .sidenav-text-style {
+      padding: 15px 0 15px 50px;
+      color: black;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px !important;
+      line-height: 23px !important;
+    }
+    .tryitout {
+      margin: 32px 0px 0px 0px;
+      height: 30px;
+    }
+    .sidenav-btn-style {
+      margin: 32px 0 40px 32px;
+    }
+    .sidenav-btn {
+      background-color: #ff6600;
+      border-radius: 5px;
+      width: 60%;
+      font-size: 14px;
+      height: 35px;
+      line-height: 35px;
+      text-transform: none;
+    }
+    .community-style {
+      height: 30px;
+    }
+    .footer-icons {
+      justify-content: center;
+      margin-top: 16px;
+      position: relative;
+      right: 6vw;
+      a {
+        padding: 0 16px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  nav {
+    height: 64px !important;
+    line-height: 64px;
+  }
+  .navbar-color {
+    background-color: #ffffff !important;
+
+    .navbar-style {
+      width: 100%;
+      .spaceup-logo-style {
+        height: 30px;
+        width: 200px;
+        float: left;
+        margin-top: 15px;
+      }
+      .navbar-text-style {
+        color: black;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        padding: 0px 24px;
+      }
+      .github {
+        height: 35px;
+        width: 35px;
+        margin: 11px 8px 0 4px;
+      }
+      .get-started-btn {
+        background: #ff6600;
+        border-radius: 5px;
+        font-weight: 500;
+        font-size: 15px;
+        text-transform: none;
+      }
+      .get-started-btn:hover {
+        background: #ff6600;
+      }
+    }
+  }
+}

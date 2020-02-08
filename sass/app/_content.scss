@@ -1,0 +1,120 @@
+
+  .content {
+    .row {
+      margin: 120px 0px 0px 0px;
+    }
+    .bottom-btn{
+      text-transform: capitalize;
+      background-color: white;
+      color: #ff6700;
+      border: 1px solid #ff6700;
+    }
+    .primary-text {
+      font-weight: 600;
+      font-size: 30px;
+    }
+    .secondary-text{
+      font-size: 15px;
+      font-weight: normal;
+      margin-top: 25px;
+    }
+    .bulletpoints {
+      margin-top: 35px;
+      margin-bottom: 68px;
+    }
+    .bulletpoints {
+      margin-left: -8px;
+    }
+    .join {
+      padding-top: 84px;
+      background-color: #FAFAFA;
+      padding-bottom: 117px;
+      text-align: center;
+      .primary-text{
+        width: 100%;
+        margin-bottom: 24px;
+      }
+      .secondary-text{
+        margin: 0 auto;
+        max-width: 750px;
+        color: rgba(0, 0, 0, 0.56);
+      }
+      .discord-invite-btn{
+        text-transform: capitalize;
+        color: white;
+        background-color: #7289DA;
+        height: 64px;
+        line-height: 64px;
+        border-radius: 4px;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        margin: 80px 0px;
+      }
+    }
+
+  }
+
+  @media #{$small-and-down} {
+    .content {
+      padding: 0px 15px;
+      .content-image {
+        margin-top: 80px;
+      }
+      .discord-invite-btn{
+        text-transform: capitalize;
+        color: white;
+        background-color: #7289DA;
+        height: 56px;
+        line-height: 56px;
+      }
+    }
+  }
+
+  @media #{$large-and-up} {
+    .content {
+      .row {
+        margin: 240px 121px 0px 121px;
+        display: flex;
+      align-items: center;
+      }
+      .primary-text {
+        font-weight: bold;
+        font-size: 32px;
+      }
+      .secondary-text{
+        margin-top: 32px;
+        font-weight: 600;
+        font-size: 18px;
+      }
+      .bulletpoints{
+        margin-top: 48px;
+        li {
+          color: rgba(0, 0, 0, 0.87);
+          list-style-type: none;
+        }
+      }
+      .join { 
+        padding-top: 84px;
+        text-align: center;
+        .secondary-text {
+          width: 100%;
+          text-align: center;
+          font-weight: normal;
+          font-size: 18px;
+          margin: 0 auto;
+        }
+        .primary-text{
+          height: 25px;
+        }
+        img {
+          width: 470px;
+          height: 350.66px;
+        }
+      }
+      .security-img{
+        margin-left: -60px;
+      }
+    }
+}
