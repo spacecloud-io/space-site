@@ -4,6 +4,6 @@
 
 [[redirects]]
   from = "/downloads"
-  to = "https://downloads.spaceuptech.com"
+  to = "http://downloads.spaceuptech.com"
   status = 200
   force = true
