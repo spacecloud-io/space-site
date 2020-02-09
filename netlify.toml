@@ -4,6 +4,6 @@
 
 [[redirects]]
   from = "/downloads/*"
-  to = "http://downloads.spaceuptech.com"
+  to = "http://downloads.spaceuptech.com/*"
   status = 301
   force = true
