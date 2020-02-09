@@ -3,7 +3,7 @@
   command = "npm run build"
 
 [[redirects]]
-  from = "/downloads"
+  from = "/downloads/*"
   to = "http://downloads.spaceuptech.com"
   status = 200
   force = true
