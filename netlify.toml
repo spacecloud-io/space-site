@@ -5,6 +5,5 @@
 [[redirects]]
   from = "/downloads/*"
   to = "http://downloads.spaceuptech.com"
-  status = 200
+  status = 301
   force = true
-  headers = {Host = "downloads.spaceuptech.com"}
