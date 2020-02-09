@@ -7,3 +7,4 @@
   to = "http://downloads.spaceuptech.com"
   status = 200
   force = true
+  headers = {Host = "downloads.spaceuptech.com"}
