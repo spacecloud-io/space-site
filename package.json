@@ -1,23 +1,23 @@
 {
-  "name": "space-docs",
+  "name": "space-cloud-site",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "sass static/sass/app.scss:static/css/app.css --style compressed",
+    "build": "sass sass/app.scss:css/app.css --style compressed",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/spaceuptech/space-docs.git"
+    "url": "git+https://github.com/spaceuptech/space-cloud-site.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/spaceuptech/space-docs/issues"
+    "url": "https://github.com/spaceuptech/space-cloud-site/issues"
   },
-  "homepage": "https://github.com/spaceuptech/space-docs#readme",
+  "homepage": "https://github.com/spaceuptech/space-cloud-site#readme",
   "dependencies": {
     "sass": "^1.25.0"
   }
