@@ -50,13 +50,13 @@
               <div class="navbar-tabs valign-wrapper">
                 <a href="https://learn.spaceuptech.com"><span>Learn</span></a>
                 <a href="https://docs.spaceuptech.com"><span>Docs</span></a>
-                <a href="/pricing"><span>Pricing</span></a>
+                <!-- <a href="/pricing"><span>Pricing</span></a> -->
                 <a href="https://blog.spaceuptech.com"><span>Blog</span></a>
                 <a href="https://github.com/spaceuptech/space-cloud" target="_blank">
                   <img src="/images/github.svg" alt="github-logo" id="github-icon" height="40">
                 </a>
               </div>
-              <a href="https://docs.spaceuptech.com/getting-started/quick-start"
+              <a href="https://learn.spaceuptech.com/space-cloud/basics/setup/"
                 class="waves-effect waves-light btn get-started-top">Get Started</a>
             </div>
 
@@ -71,10 +71,10 @@
           <li><a href="/" class="sidenav-text-style">Home</a></li>
           <li><a href="https://learn.spaceuptech.com" class="sidenav-text-style">Learn</a></li>
           <li><a href="https://docs.spaceuptech.com" class="sidenav-text-style">Docs</a></li>
-          <li><a href="/plans" class="sidenav-text-style">Pricing</a></li>
+          <!-- <li><a href="/plans" class="sidenav-text-style">Pricing</a></li> -->
           <li><a href="https://blog.spaceuptech.com" class="sidenav-text-style">Blog</a></li>
           <li><a class="sidenav-text-style tryitout">Try Space Cloud!</a></li>
-          <li class="sidenav-btn-style"><a href="https://docs.spaceuptech.com/getting-started/quick-start"
+          <li class="sidenav-btn-style"><a href="https://learn.spaceuptech.com/space-cloud/basics/setup/"
               class=" btn sidenav-btn">Get Started</a>
           </li>
           <li class="community-style"><a class="sidenav-text-style">Join the Community</a></li>
@@ -100,7 +100,7 @@
             </div>
           </div>
           <a class="waves-effect waves-light left-wrapper-btn btn-large" style="background-color: #FF6700;"
-            href="https://docs.spaceuptech.com/getting-started/quick-start">Get
+            href="https://learn.spaceuptech.com/space-cloud/basics/setup/">Get
             Started</a>
           <div class="stars-flex">
             <a href="https://github.com/spaceuptech/space-cloud">
@@ -133,7 +133,7 @@
                 style="margin-right:10px;position: relative;top: 5px;color:#FF6700">chevron_right</i>Reliable triggers
               on any event</li>
           </ul>
-          <a class="btn-large bottom-btn">All development features</a>
+          <a href="https://docs.spaceuptech.com/introduction/features/" class="btn-large bottom-btn">All development features</a>
         </div>
         <div class="col s12 l6 content-image">
           <img src="images/graphql_spaceup.svg" style="width:100%;height:auto">
@@ -176,7 +176,7 @@
                 style="margin-right:10px;position: relative;top: 5px;color:#FF6700">chevron_right</i>Rolling upgrades
               and rollbacks</li>
           </ul>
-          <a class="btn-large bottom-btn">All platform features</a>
+          <a href="https://docs.spaceuptech.com/microservices/deployments/" class="btn-large bottom-btn">All platform features</a>
         </div>
         <div class="col s12 l6 content-image">
           <img src="images/platform.png" style="width: 100%;height: auto">
@@ -268,7 +268,6 @@
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="https://spaceuptech.com/downloads/libraries/space-api-v0.10.1.js"></script>
   <script>
     $('.sidenav').sidenav({ edge: 'right' });
     const stargazers_count = document.getElementById("stargazers_count");
@@ -325,9 +324,9 @@
         $("#subscribeBtn").addClass("submit-request");
         $.ajax({
           type: 'POST',
-          url: 'http://localhost:3000/v1/newsletter/subscribe',
+          url: 'https://spaceuptech.com/v1/site/subscribe',
           data: JSON.stringify({
-            email: email.val()
+            email: email.val(), tags: ["newsletter"] 
           }),
           contentType: "application/json; charset=utf-8",
           dataType: "json",
