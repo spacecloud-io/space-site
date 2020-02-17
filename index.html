@@ -200,8 +200,8 @@
       <div class="secondary-text" style="margin-bottom: 80px;">
         Awesome product updates; no spam<br>
         <div class="email-container">
-          <input type="email" class="email-input" placeholder="Email" id="subscribe-email" /><a
-            class="subscribe-btn btn-large" id="subscribeBtn">Subscribe</a>
+          <input type="email" class="email-input" placeholder="Email" id="subscribe-email" /><button
+            class="loading-btn btn-large" id="subscribeBtn">Subscribe</button>
           <br />
           <span class="subscribe-email-label body-text" style="color: red;">Please enter a valid email!</span>
         </div>
@@ -296,61 +296,8 @@
         console.log('failed')
       }
     })
-
-    //email
-    function isEmail(email) {
-      var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-      return regex.test(email);
-    }
-    $('.subscribe-email-label').css('display', 'none');
-    $('#subscribe-email').on('input', function () {
-      var email = $('#subscribe-email');
-      const validated = isEmail(email.val());
-      if (validated === true) {
-        $('.subscribe-email-label').css('display', 'none');
-      } else if (validated === false) {
-        $('.subscribe-email-label').css('display', 'inline-block');
-      }
-    })
-
-    $("#subscribeBtn").click(function () {
-      var email = $('#subscribe-email');
-      const validated = isEmail(email.val());
-      if (validated === false) {
-        $('.subscribe-email-label').css('display', 'inline-block');
-        $('#subscribe-email').focus();
-      }
-      else {
-        $("#subscribeBtn").addClass("submit-request");
-        $.ajax({
-          type: 'POST',
-          url: 'https://spaceuptech.com/v1/site/subscribe',
-          data: JSON.stringify({
-            email: email.val(), tags: ["newsletter"] 
-          }),
-          contentType: "application/json; charset=utf-8",
-          dataType: "json",
-          success: function (data) {
-            email.val('')
-            if (data.ack === true) {
-              gtag('config', 'UA-104521884-1', {
-                'page_path': '/modal/demo/success'
-              });
-              $("#subscribeBtn").removeClass("submit-request");
-              M.toast({ html: 'Thank you for subscribing!', displayLength: 4000 })
-            } else {
-              $("#subscribeBtn").removeClass("submit-request");
-              M.toast({ html: 'Request failed. Something went wrong', displayLength: 4000 })
-            }
-          },
-          failure: function () {
-            $("#subscribeBtn").removeClass("submit-request");
-            M.toast({ html: 'Request failed. Something went wrong', displayLength: 4000 })
-          }
-        })
-      }
-    })
   </script>
+  <script src="/js/newsletter.js"></script>
 </body>
 
 </html>
