@@ -1,0 +1,12 @@
+.subscribe-email.valid {
+    border-bottom: 1px solid #9e9e9e !important;
+    box-shadow: none !important;
+}
+.subscribe-email.error {
+    border-bottom: 1px solid #f44336 !important;
+    box-shadow: none !important;
+}
+.subscribe-email.error:focus {
+    border-bottom: 1px solid #f44336 !important;
+    box-shadow: 0 1px 0 0 #f44336 !important;
+}
