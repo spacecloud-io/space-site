@@ -17,7 +17,7 @@ function isEmail(email) {
       }
     })
 
-    $("#subscribeBtn").click(function () {
+    $("#subscribe-btn").click(function () {
       var email = $('#subscribe-email');
       const validated = isEmail(email.val());
       if (validated === false) {
@@ -26,9 +26,9 @@ function isEmail(email) {
         $('.subscribe-email-label').css('display', 'inline-block');
         $('#subscribe-email').focus();
       }
-      if (email.hasClass('valid'  )) {
-        $("#subscribeBtn").addClass("submit-request");
-        $("#subscribeBtn").css({"cursor" : "not-allowed"});
+      if (email.hasClass('valid')) {
+        $("#subscribe-btn").addClass("submit-request");
+        $("#subscribe-btn").css({"cursor" : "not-allowed"});
         $("#loading").addClass("loading-active");
         fetch("https://api.spaceuptech.com/v1/site/subscribe", {
           method: 'POST',
@@ -45,7 +45,7 @@ function isEmail(email) {
             },1500)
             setTimeout(()=>{
               $("#loading").removeClass("loading-sucess");
-              $("#subscribeBtn").css({"cursor" : ""});
+              $("#subscribe-btn").css({"cursor" : ""});
             },3000)
           }else if (res.status === 'subscribed'){
             setTimeout(()=>{
@@ -55,7 +55,7 @@ function isEmail(email) {
           },1500)
           setTimeout(()=>{
             $("#loading").removeClass("loading-sucess");
-            $("#subscribeBtn").css({"cursor" : ""});
+            $("#subscribe-btn").css({"cursor" : ""});
           },3000)
           }else {
             setTimeout(()=>{
@@ -65,7 +65,7 @@ function isEmail(email) {
             },1500)
             setTimeout(()=>{
               $("#loading").removeClass("loading-error");
-              $("#subscribeBtn").css({"cursor" : ""});
+              $("#subscribe-btn").css({"cursor" : ""});
             },2000) 
             }
           })
@@ -78,7 +78,7 @@ function isEmail(email) {
             },1500)
             setTimeout(()=>{
               $("#loading").removeClass("loading-error");
-              $("#subscribeBtn").css({"cursor" : ""});
+              $("#subscribe-btn").css({"cursor" : ""});
             },2000) 
           });
       }

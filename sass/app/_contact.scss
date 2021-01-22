@@ -1,0 +1,86 @@
+.website{
+
+  .contact-header-section{
+    background: none;
+    margin-bottom: 80px;
+    @media #{$medium-and-down}{
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  .contact-title{
+    text-align: center;
+    font-size: 40px;
+    line-height: 72px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .contact-card{
+    padding: 32px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-bottom: 80px;
+
+    .input-container{
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .error-msg{
+      color: #FF0000;
+      display: none; 
+      font-size: 14px; 
+      font-family: 'Poppins', sans-serif;
+      @media #{$medium-and-down}{
+        font-size: 12px;
+      }
+    }
+
+    .input-field{
+      background: #FFF;
+      padding: 8px 24px;
+      border-radius: 10px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: left;
+      width: 100% !important;
+      border: 1px solid #DDD;
+      box-sizing: border-box;
+      @media #{$medium-and-down}{
+        font-size: 14px;
+        line-height: 21px;
+      }
+    }
+
+    .input-field::placeholder {
+      opacity: 75%;
+    }
+
+    .input-field:hover, .input-field:focus{
+      border: 1px solid #333;
+    }
+
+    .input-textarea{
+      height: 100px;
+      width: 100%;
+      margin-top: 0;
+    }
+
+    .submit-btn{
+      width: 100%;
+      background: #1D66FF;
+      text-transform: none;
+      font-family: 'Poppins', sans-serif;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

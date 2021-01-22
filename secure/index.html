@@ -1,9 +1,9 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-    <link type="text/css" rel="stylesheet" href="./css/app.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="../css/app.css" media="screen,projection" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&display=swap" rel="stylesheet" />
-    <link rel="shortcut icon" type="image/png" href="./images/kit/logo.svg" />
+    <link rel="shortcut icon" type="image/png" href="../images/kit/logo.svg" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
     <title>Space Cloud: Instant Realtime APIs for Serverless Apps</title>
@@ -35,8 +35,8 @@
 
   <body>
     <div class="website">
-      <div class="row header-section">
-        <nav class="header">
+      <div class="row header-section sec-landing-background">
+        <nav class="header section-header">
           <a href="/"><img src="/images/kit/logo_full.svg" width="160px" /></a>
           <a onclick="showSidenav()"><img class="hide-on-large-only" src="/images/hamburger.svg" alt="" /></a>
           <div class="hide-on-med-and-down">
@@ -45,7 +45,7 @@
               <ul id='dropdown1' class='dropdown-content'>
                 <li><a href="/develop">Develop</a></li>
                 <li><a href="/deploy">Deploy</a></li>
-                <li><a href="/secure">Secure</a></li>
+                <li><a class="active" href="/secure">Secure</a></li>
               </ul></li>
               <li><a href="/pricing">Pricing</a></li>
               <li><a class='dropdown-trigger' href='#' data-target='dropdown2'>Resources</a>
@@ -79,7 +79,7 @@
             <a href="/">
               <img src="/images/kit/logo_full.svg" alt="logo" class="sidenav-logo" width="160px">
             </a>
-            <li><a href="/" class="sidenav-text-style active">Home</a></li>
+            <li><a href="/" class="sidenav-text-style">Home</a></li>
             <li><ul class="collapsible">
               <li>
                 <div class="collapsible-header">Features</div>
@@ -87,7 +87,7 @@
                   <ul class="sidenav-list">
                     <li><a href="/develop">Develop</a></li>
                     <li><a href="/deploy">Deploy</a></li>
-                    <li><a href="/secure">Secure</a></li>
+                    <li><a class="active" href="/secure">Secure</a></li>
                   </ul>
                 </div>
               </li>
@@ -124,228 +124,102 @@
 
         <div class="col l10 offset-l1 landing-section">
           <div class="col l6">
-            <!-- <h1 class="landing-title">Space Cloud</h1> -->
-            <h2 class="landing-title">Develop, Deploy & Secure</h2>
-            <p class="landing-desc">An <a href="https://github.com/spaceuptech/space-cloud" target="_blank" style="color: #1d66ff">opensource</a> kubernetes based serverless platform with built-in security and instant GraphQL APIs for any database and microservice</p>
+            <h2 class="landing-title">Security Configuration</h2>
+            <p class="landing-desc">Spacecloud lets you <span style="color: #1d66ff;">decouple security</span> from your code by simply configuring security rules</p>
             <div class="col s10 m5 l8 xl6" style="padding-left: 0;">
-              <a href="https://learn.spaceuptech.com/space-cloud/basics/" target="_blank" class="btn landing-btn">
-                <span>Get Started</span>
+              <a href="https://docs.spaceuptech.com/security/" target="_blank" class="btn landing-btn">
+                <span>View Docs</span>
                 <img src="/images/east-black-36dp.svg" alt="" />
               </a>
             </div>
           </div>
           <div class="col l6 hide-on-med-and-down">
-            <img src="/images/landing-img.svg" style="height: auto; margin-left: 50px; width: 95%; max-width: 100%" />
+            <img src="/images/secure-landing.svg" style="height: auto; margin-left: 100px; width: 75%; max-width: 100%" />
           </div>
         </div>
       </div>
 
-      <div class="row">
-        <div class="col s12 l10 offset-l1 section-develop-background">
-          <img class="develop-dots hide-on-med-and-down" src="/images/4rows-dots.svg" alt="" style="filter: brightness(0) saturate(100%) invert(45%) sepia(86%) saturate(5668%) hue-rotate(215deg) brightness(99%) contrast(105%)" />
-          <img class="develop-dots hide-on-large-only" src="/images/2rows-dots.svg" alt="" style="filter: brightness(0) saturate(100%) invert(45%) sepia(86%) saturate(5668%) hue-rotate(215deg) brightness(99%) contrast(105%)" />
-          <div class="sections">
-            <div class="col s12 l10 offset-l1">
-              <p class="section-title">Develop great software quicker</p>
-              <p class="section-description">Ready framework to adhere to the best practices of modern cloud app development that lets you <span class="section-description-bold">focus on your business logic </span></p>
-              <img class="section-img" src="/images/graphQL-diagram.svg" alt="security" />
-              <div class="col s12 l6 feature-heading">
-                <img class="feature-img" src="/images/link.svg" alt="join" />
-                <div>
-                  <p class="feature-title">Join on the Fly</p>
-                  <p class="feature-desc">Cross database joins using GraphQL across multiple databases</p>
-                </div>
-              </div>
-              <div class="col s12 l6 feature-heading">
-                <img class="feature-img small-img" src="/images/rest.svg" alt="REST" />
-                <div>
-                  <p class="feature-title">REST support</p>
-                  <p class="feature-desc">GraphQL wrapper for function as a service on REST APIs</p>
-                </div>
-              </div>
-              <div class="col s12 l6 feature-heading">
-                <img class="feature-img" src="/images/folder.svg" alt="storage" />
-                <div>
-                  <p class="feature-title">Storage</p>
-                  <p class="feature-desc">Native support for storage system like local storage and S3 to manage files</p>
-                </div>
-              </div>
-              <div class="col s12 l6 feature-heading">
-                <img class="feature-img small-img" src="/images/eventing.svg" alt="eventing" />
-                <div>
-                  <p class="feature-title">Eventing</p>
-                  <p class="feature-desc">Built in support for a Pub Sub system to manage asynchronous events</p>
-                </div>
-              </div>
-              <div class="col s12" style="display: flex; justify-content: center">
-                <a href="/develop" class="btn section-btn section-develop-btn">Learn more</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col s12 l10 offset-l1 section-deploy-background">
-          <img class="deploy-dots hide-on-med-and-down" src="/images/4rows-dots.svg" alt="" style="filter: brightness(0) saturate(100%) invert(73%) sepia(30%) saturate(7366%) hue-rotate(110deg) brightness(96%) contrast(94%)" />
-          <img class="deploy-dots hide-on-large-only" src="/images/2rows-dots.svg" alt="" style="filter: brightness(0) saturate(100%) invert(73%) sepia(30%) saturate(7366%) hue-rotate(110deg) brightness(96%) contrast(94%)" />
-          <br /><br />
-          <div class="sections">
-            <div class="col s12 l10 offset-l1">
-              <p class="section-title">Manage Dev and Ops seamlessly</p>
-              <p class="section-description">Bring app developers and operations team together and <span class="section-description-bold">achieve quick release cycles</span></p>
-              <img class="section-img" src="/images/Devops Diagram.svg" alt="devops" />
-              <div class="col s12 l6 feature-heading">
-                <img class="feature-img" src="/images/click.svg" alt="one click" />
-                <div>
-                  <p class="feature-title">1 Click Deploy</p>
-                  <p class="feature-desc">One click deployment of microservices in any language</p>
-                </div>
-              </div>
-              <div class="col s12 l6 feature-heading">
-                <img class="feature-img" src="/images/meesh.svg" alt="mesh" />
-                <div>
-                  <p class="feature-title">Service Mesh</p>
-                  <p class="feature-desc">Secure, Control, and Observe microservices using Service Mesh - Istio</p>
-                </div>
-              </div>
-              <div class="col s12 l6 feature-heading">
-                <img class="feature-img" src="/images/abstraction.svg" alt="abstraction" />
-                <div>
-                  <p class="feature-title">Abstraction</p>
-                  <p class="feature-desc">Abstracts Kubernetes and Istio configurations for developers</p>
-                </div>
-              </div>
-              <div class="col s12 l6 feature-heading">
-                <img class="feature-img" src="/images/scaling.svg" alt="auto scaling" />
-                <div>
-                  <p class="feature-title">Auto Scaling</p>
-                  <p class="feature-desc">Scale less frequently used services to zero</p>
-                </div>
-              </div>
-              <div class="col s12" style="display: flex; justify-content: center">
-                <a href="/deploy" class="btn section-btn section-deploy-btn">Learn more</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col s12 l10 offset-l1 section-decouple-background">
-          <img class="decouple-dots hide-on-med-and-down" src="/images/4rows-dots.svg" alt="" style="filter: brightness(0) saturate(100%) invert(22%) sepia(94%) saturate(3701%) hue-rotate(282deg) brightness(91%) contrast(119%)" />
-          <img class="decouple-dots hide-on-large-only" src="/images/2rows-dots.svg" alt="" style="filter: brightness(0) saturate(100%) invert(22%) sepia(94%) saturate(3701%) hue-rotate(282deg) brightness(91%) contrast(119%)" />
-          <div class="sections">
-            <div class="col s12 l10 offset-l1">
-              <p class="section-title">Decouple security from your code</p>
-              <p class="section-description">Configure security rules instead of embedding the same as part of your code and thereby <span class="section-description-bold">centralize your authorization logic</span></p>
-              <img class="section-img" src="/images/security-diagram.svg" alt="security" />
-              <div class="col s12 l6 feature-heading">
-                <img class="feature-img" src="/images/ingress.svg" alt="single point" />
-                <div>
-                  <p class="feature-title">Single Point</p>
-                  <p class="feature-desc">Single ingress point for all incoming traffic</p>
-                </div>
-              </div>
-              <div class="col s12 l6 feature-heading">
-                <img class="feature-img" src="/images/authorization.svg" alt="authorization" />
-                <div>
-                  <p class="feature-title">Authorization</p>
-                  <p class="feature-desc">Authorization rules validation at HTTP (L7) layer</p>
-                </div>
-              </div>
-              <div class="col s12 l6 feature-heading">
-                <img class="feature-img" src="/images/policy.svg" alt="authorization" />
-                <div>
-                  <p class="feature-title">Policy</p>
-                  <p class="feature-desc">Define policies for service to service communication using mTLS</p>
-                </div>
-              </div>
-              <div class="col s12 l6 feature-heading">
-                <img class="feature-img" src="/images/future.svg" alt="authorization" />
-                <div>
-                  <p class="feature-title">Future Proof</p>
-                  <p class="feature-desc">Easily manage future security policy changes</p>
-                </div>
-              </div>
-              <div class="col s12" style="display: flex; justify-content: center">
-                <a href="/secure" class="btn section-btn section-decouple-btn">Learn more</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row sections section-enterprise-background">
-        <img class="enterprise-dots hide-on-med-and-down" src="/images/4rows-dots.svg" alt="" /><br />
-        <img class="enterprise-dots hide-on-large-only" src="/images/2rows-dots.svg" alt="" /><br />
-        <div class="col s12 l8 offset-l1">
-          <p class="section-title section-enterprise-title">Space Cloud Enterprise</p>
-          <p class="section-description section-enterprise-description">Space Cloud Enterprise addresses the organizational complexities and provides a robust platform for your entire team to collaborate on many large projects simultaneously connecting to multiple databases.</p>
-          <a href="/pricing" class="btn section-btn section-enterprise-btn">Pricing</a>
-        </div>
+      <div class="row innerpage-white-background">
         <div class="col s12 l10 offset-l1">
-          <div class="col s12 l6 enterprise-feature">
-            <img src="/images/access.svg" alt="access control" />
-            <p class="feature-title feature-title-enterprise">Role based access control</p>
-            <p class="feature-desc feature-desc-enterprise">- Multiple users can be created and integrated with your organization SSO for authentication.</p>
-            <p class="feature-desc feature-desc-enterprise">- Granular activity level permissions can be assigned to users to ensure that they can configure only relevant settings.</p>
-          </div>
-          <div class="col s12 l6 enterprise-feature">
-            <img src="/images/config.svg" alt="config changes" />
-            <p class="feature-title feature-title-enterprise">Approval based config changes</p>
-            <p class="feature-desc feature-desc-enterprise">- Configuration changes done will not directly affect the cluster settings but will be sent to another user for approval.</p>
-            <p class="feature-desc feature-desc-enterprise">- All changes in the configuration are logged and tagged to the user who initiated or accepted/rejected the change.</p>
-          </div>
-          <div class="col s12 l6 enterprise-feature">
-            <img src="/images/database.svg" alt="caching" />
-            <p class="feature-title feature-title-enterprise">Caching</p>
-            <p class="feature-desc feature-desc-enterprise">- A new directive in GraphQL query that lets you cache the query result with pre-defined TTL.</p>
-            <p class="feature-desc feature-desc-enterprise">- CDC based monitoring of your data to invalidate the cache in case of any mutations on your data.</p>
-          </div>
-          <div class="col s12 l6 enterprise-feature">
-            <img src="/images/log.svg" alt="log" />
-            <p class="feature-title feature-title-enterprise">Comprehensive audit logs</p>
-            <p class="feature-desc feature-desc-enterprise">- Incoming requests and responses to each request through Space Cloud are logged.</p>
-            <p class="feature-desc feature-desc-enterprise">-This helps to maintain audit trail for future traceability.</p>
-          </div>
-          <div class="col s12 l6 enterprise-feature">
-            <img src="/images/multi.svg" alt="multiple projects" />
-            <p class="feature-title feature-title-enterprise">Multiple Projects and Database</p>
-            <p class="feature-desc feature-desc-enterprise">- Create multiple projects and connect to multiple databases within a single project.</p>
-            <p class="feature-desc feature-desc-enterprise">- Individual project can be controlled by team management module for better access control.</p>
-          </div>
-          <div class="col s12 l6 enterprise-feature">
-            <a href="/contact/?sub=Schedule a Demo" class="btn section-btn section-enterprise-btn enterprise-big-btn">
-              <img src="/images/call.svg" alt="multiple projects" class="call-img" />
-              <div style="display: flex; width: 100%; justify-content: space-between">
-                <span>Schedule a Demo</span>
-                <img src="/images/east-black-36dp.svg" width="48px" alt="" class="hide-on-med-and-down" style="filter: brightness(0) saturate(100%) invert(29%) sepia(92%) saturate(2539%) hue-rotate(215deg) brightness(99%) contrast(104%)" />
+          <div class="sections innerpage-section">
+            <div class="col s12 l6">
+              <p class="section-title innerpage-title">Security rule engine</p>
+              <div class="img-align">
+                <img src="/images/security.svg" alt="" class="hide-on-large-only" style="max-width: 100%; height: 240px; margin-top: 20px; margin-bottom: 43px;"/>
               </div>
-            </a>
+              <ul class="innerpage-list">
+                <li><p class="section-description innerpage-des">Single ingress point for all incoming traffic</p></li>
+                <li><p class="section-description innerpage-des">Authorization rules validation at HTTP (L7) layer</p></li>
+                <li><p class="section-description innerpage-des">Easily manage future security policy changes</p></li>
+                <li><p class="section-description innerpage-des">Validate JWT tokens and claims with predefined rules</p></li>
+                <li><p class="section-description innerpage-des">Mask/hide sensitive information in your request/response</p></li>
+                <li><p class="section-description innerpage-des">Integrates with your existing auth server</p></li>
+              </ul>
+              <div class="col s12 innerpage-btn">
+                <a href="https://docs.spaceuptech.com/security/security-rules/" class="btn section-btn section-develop-btn">View Docs</a>
+              </div>
+            </div>
+            <div class="col l6 hide-on-med-and-down">
+              <img src="/images/security.svg" alt="" style="max-width: 100%; margin-left: 50px;"/>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="row">
+      <div class="row innerpage-grey-background">
+        <div class="col s12 l10 offset-l1">
+          <div class="sections innerpage-section">
+            <div class="col l6 hide-on-med-and-down img-align">
+              <img src="/images/service-mesh.svg" alt="" style="max-width: 100%;"/>
+            </div>
+            <div class="col s12 l6">
+              <div class="innerpage-reverse-section">
+                <p class="section-title innerpage-title">Service Mesh</p>
+                <div class="img-align">
+                  <img src="/images/service-mesh.svg" alt="" class="hide-on-large-only" style="max-width: 100%; height: 167px; margin-top: 59px; margin-bottom: 102px;"/>
+                </div>
+                <ul class="innerpage-list">
+                  <li><p class="section-description innerpage-des">Built in support for Service Mesh - Istio</p></li>
+                  <li><p class="section-description innerpage-des">Define policies for service to service communication over TCP (L5/6) layer</p></li>
+                  <li><p class="section-description innerpage-des">Zero Trust Networking within cluster – whitelist services to allow internal communication</p></li>
+                  <li><p class="section-description innerpage-des">Auto upgrade to HTTPS within the cluster using mTLS protocol</p></li>
+                </ul>
+                <div class="col s12 innerpage-btn">
+                  <a href="https://docs.spaceuptech.com/security/platform-security/" class="btn section-btn section-develop-btn">View Docs</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row innerpage-white-background">
+        <div class="col s12 l10 offset-l1">
+          <div class="sections explore-section">
+            <p class="section-title innerpage-explore-title">Explore other features</p>
+            <div class="row">
+              <div class="col s6 l3 offset-l2" style="text-align: center; cursor: pointer;" onclick="window.open('/develop', '_self')">
+                <img class="community-img" src="/images/develop-page.svg" alt="" />
+                <p class="community-text innerpage-explore-text">Develop</p>
+                <p class="community-number">GraphQL on your DB and services</p>
+              </div>
+              <div class="col s6 l3 offset-l2 " style="text-align: center; cursor: pointer;" onclick="window.open('/deploy', '_self')">
+                <img class="community-img" src="/images/deploy-page.svg" alt="" />
+                <p class="community-text innerpage-explore-text">Deploy</p>
+                <p class="community-number">Deploy services from Space Cloud</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row innerpage-grey-background">
         <div class="col s12 l10 offset-l1">
           <div class="col s12">
             <div class="sections" style="padding-top: 72px">
-              <p class="section-title">Join our community and get started</p>
-              <div class="row">
-                <div class="col s6 l3 offset-l2 " style="text-align: center; cursor: pointer;" onclick="window.open('https://github.com/spaceuptech/space-cloud/')">
-                  <img class="community-img" src="/images/github.svg" alt="" />
-                  <p class="community-text">Github</p>
-                  <p id="github-stars" class="community-number"></p>
-                </div>
-                <div class="col s6 l3 offset-l2" style="text-align: center; cursor: pointer;" onclick="window.open('https://discord.com/invite/RkGjW93')">
-                  <img class="community-img" src="/images/discord.svg" alt="" />
-                  <p class="community-text">Discord</p>
-                  <p class="community-number">300+ members</p>
-                </div>
-              </div>
+              <p class="section-title">Get Started</p>
               <div class="col s12 l10 offset-l1">
-                <p class="section-description community-description">Check out our Documentation and Tutorials to see how easy it is to setup Space Cloud and go the serverless way.</p>
+                <p class="section-description">Check out our Documentation and Tutorials to see how easy it is to setup Space Cloud and go the serverless way.</p>
               </div>
               <div class="outer-card-wrap">
                 <div class="inner-card-wrap">
@@ -355,7 +229,7 @@
                         <img src="/images/doc.svg" alt="documentation" />
                         <p class="feature-title card-title">Documentation</p>
                       </div>
-                      <p class="feature-desc hide-on-med-and-down">A deep dive documentation explaining every aspect of Space Cloud and a general reference of it. So, if you are stuck, we hope its your haven.</p>
+                      <p class="feature-desc hide-on-med-and-down">A deep dive documentation to explaining every part of Space Cloud and a general reference of it. You are stuck, we hope its your haven.</p>
                       <span class="material-icons hide-on-large-only" style="height: 20px; width: 20px; color: #1050d6">keyboard_arrow_right</span>
                     </div>
                     <div class="hide-on-med-and-down" style="text-align: center; margin-top: 20px">
@@ -482,21 +356,19 @@
       }
       
       const stargazers_count = document.getElementById("stargazers_count");
-      const github_stars_count = document.getElementById("github-stars");
       $.ajax({
         type: "GET",
         url: "https://api.spaceuptech.com/v1/site/github-stars",
         dataType: "json",
         success: function (data) {
           stargazers_count.innerText = data.count;
-          github_stars_count.innerText = data.count + " stars";
         },
         failure: function () {
           console.log("failed");
         },
       });
     </script>
-    <script src="./js/newsletter.js"></script>
+    <script src="../js/newsletter.js"></script>
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
   </body>
