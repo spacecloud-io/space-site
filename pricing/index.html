@@ -1,0 +1,1904 @@
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="../css/app.css"
+      media="screen,projection"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="../images/kit/logo.svg"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <title>Space Cloud: Instant Realtime APIs for Serverless Apps</title>
+    <meta
+      name="description"
+      content="Space Cloud simplifies building Serverless Apps at Scale."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Space Cloud: Instant Realtime APIs for Serverless Apps"
+    />
+    <meta
+      property="og:description"
+      content="Space Cloud simplifies building Serverless Apps at Scale."
+    />
+    <meta
+      property="og:image"
+      content="https://spaceuptech.com/images/kit/logo-white.svg"
+    />
+    <meta property="og:url" content="https://spaceuptech.com" />
+    <meta property="og:site_name" content="Space Up Technologies" />
+    <meta
+      name="twitter:title"
+      content="Space Cloud: Instant Realtime APIs for Serverless Apps"
+    />
+    <meta
+      name="twitter:description"
+      content="Space Cloud simplifies building Serverless Apps at Scale."
+    />
+    <meta
+      name="twitter:image"
+      content="https://spaceuptech.com/images/kit/logo-white.svg"
+    />
+    <meta name="twitter:site" content="@SpaceUpTech" />
+    <meta name="twitter:creator" content="@SpaceUpTech" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-104521884-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-104521884-1");
+    </script>
+  </head>
+
+  <body>
+    <div class="website">
+      <div class="row header-section">
+        <nav class="header">
+          <a href="/"><img src="../images/kit/logo_full.svg" width="160px" /></a>
+          <a onclick="showSidenav()"
+            ><img class="hide-on-large-only" src="/images/hamburger.svg" alt=""
+          /></a>
+          <div class="hide-on-med-and-down">
+            <ul class="nav-list">
+              <li>
+                <a class="dropdown-trigger" href="#" data-target="dropdown1"
+                  >Features</a
+                >
+                <ul id="dropdown1" class="dropdown-content">
+                  <li><a href="/develop">Develop</a></li>
+                  <li><a href="/deploy">Deploy</a></li>
+                  <li><a href="/secure">Secure</a></li>
+                </ul>
+              </li>
+              <li><a class="active" href="/pricing">Pricing</a></li>
+              <li>
+                <a class="dropdown-trigger" href="#" data-target="dropdown2"
+                  >Resources</a
+                >
+                <ul id="dropdown2" class="dropdown-content">
+                  <li><a href="https://learn.spaceuptech.com/">Learn</a></li>
+                  <li><a href="https://docs.spaceuptech.com/">Docs</a></li>
+                  <li><a href="https://blog.spaceuptech.com/">Blog</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <ul class="nav-list hide-on-med-and-down">
+            <li>
+              <a href="https://discord.com/invite/RkGjW93" target="_blank"
+                ><img
+                  src="/images/discord.svg"
+                  alt="discord"
+                  height="26px"
+                  width="29px"
+              /></a>
+            </li>
+            <li>
+              <div
+                class="star-section"
+                onclick="window.open('https://github.com/spaceuptech/space-cloud')"
+              >
+                <span>
+                  <img src="/images/star.svg" alt="" />
+                  Star
+                </span>
+                <span id="stargazers_count"
+                  >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span
+                >
+              </div>
+            </li>
+            <li>
+              <button
+                class="btn header-btn"
+                onclick="window.open('https://learn.spaceuptech.com/space-cloud/basics/')"
+              >
+                Get Started
+              </button>
+            </li>
+          </ul>
+        </nav>
+
+        <ul id="slide-out" class="hide-on-large-only mobile-sidenav">
+          <a onclick="showSidenav()"
+            ><span class="material-icons close-sidenav">close</span></a
+          >
+          <div class="col s10 offset-s1 sidenav-style">
+            <a href="/">
+              <img
+                src="/images/kit/logo_full.svg"
+                alt="logo"
+                class="sidenav-logo"
+                width="160px"
+              />
+            </a>
+            <li><a href="/" class="sidenav-text-style">Home</a></li>
+            <li>
+              <ul class="collapsible">
+                <li>
+                  <div class="collapsible-header">Features</div>
+                  <div class="collapsible-body">
+                    <ul class="sidenav-list">
+                      <li><a href="/develop">Develop</a></li>
+                      <li><a href="/deploy">Deploy</a></li>
+                      <li><a href="/secure">Secure</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="/pricing" class="sidenav-text-style active">Pricing</a>
+            </li>
+            <li>
+              <ul class="collapsible">
+                <li>
+                  <div class="collapsible-header">Resources</div>
+                  <div class="collapsible-body">
+                    <ul class="sidenav-list">
+                      <li>
+                        <a
+                          href="https://learn.spaceuptech.com"
+                          class="sidenav-text-style"
+                          >Learn</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://docs.spaceuptech.com"
+                          class="sidenav-text-style"
+                          >Docs</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://blog.spaceuptech.com"
+                          class="sidenav-text-style"
+                          >Blog</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li style="margin-top: 50px">
+              <a class="sidenav-text-style tryitout">Try Space Cloud!</a>
+            </li>
+            <li class="sidenav-btn-style">
+              <a
+                href="https://learn.spaceuptech.com/space-cloud/basics/setup/"
+                class="btn sidenav-btn"
+                >Get Started</a
+              >
+            </li>
+            <li style="margin-top: 50px">
+              <a class="sidenav-text-style">Join the Community</a>
+            </li>
+            <li>
+              <div class="footer-icons valign-wrapper">
+                <a href="https://discord.gg/RkGjW93" target="_blank"
+                  ><img src="/images/discord.svg" height="35"
+                /></a>
+                <a
+                  href="https://github.com/spaceuptech/space-cloud"
+                  style="margin-left: 24px"
+                  target="_blank"
+                  ><img src="/images/github.svg" height="35"
+                /></a>
+              </div>
+            </li>
+          </div>
+        </ul>
+
+        <div class="col l10 offset-l1 landing-section">
+          <div class="col l6">
+            <h2 class="landing-title">SpaceCloud Enterprise</h2>
+            <p class="landing-desc">
+              Address the organizational complexities and provide a robust
+              platform for your entire team to collaborate on many large
+              projects with
+              <span style="color: #1d66ff">multiple databases.</span>
+            </p>
+            <div class="col s10 m5 l7" style="padding-left: 0">
+              <a id="compare-btn" href="#compare" class="btn landing-btn">
+                <span>Compare</span>
+                <img src="/images/east-black-36dp.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="col l6 hide-on-med-and-down">
+            <img
+              src="/images/enterprise-landing.svg"
+              style="
+                height: auto;
+                margin-left: 50px;
+                width: 95%;
+                max-width: 100%;
+              "
+            />
+          </div>
+        </div>
+      </div>
+
+      <div id="compare" class="row">
+        <div class="col s12 l10 offset-l1">
+          <img
+            class="develop-dots hide-on-med-and-down"
+            src="/images/4rows-dots.svg"
+            alt=""
+            style="
+              filter: brightness(0) saturate(100%) invert(45%) sepia(86%)
+                saturate(5668%) hue-rotate(215deg) brightness(99%)
+                contrast(105%);
+            "
+          />
+          <img
+            class="develop-dots hide-on-large-only"
+            src="/images/2rows-dots.svg"
+            alt=""
+            style="
+              filter: brightness(0) saturate(100%) invert(45%) sepia(86%)
+                saturate(5668%) hue-rotate(215deg) brightness(99%)
+                contrast(105%);
+            "
+          />
+          <div class="sections">
+            <div class="col s12">
+              <p class="section-title">SpaceCloud Enterprise</p>
+              <p class="section-description">
+                compare and select the best version suited for your needs and
+                supercharge your
+                <b>development with easy data and service federation</b>
+              </p>
+              <table
+                class="price-table hide-on-med-and-down"
+                style="margin-top: 48px"
+              >
+                <tr>
+                  <th></th>
+                  <th>
+                    <div class="col-heading">
+                      <span class="col-title">Community</span>
+                      <span class="col-price">Free</span>
+                      <a
+                        href="https://learn.spaceuptech.com/space-cloud/basics/"
+                        class="btn col-btn"
+                        >Get Started</a
+                      >
+                    </div>
+                  </th>
+                  <th>
+                    <div class="col-heading">
+                      <span class="col-title">Pro</span>
+                      <span class="col-price">$150/mo</span>
+                      <a
+                        href="https://console.spaceuptech.com/"
+                        class="btn col-btn"
+                        >Get Started</a
+                      >
+                    </div>
+                  </th>
+                  <th>
+                    <div class="col-heading">
+                      <span class="col-title">Business</span>
+                      <span class="col-price">Custom</span>
+                      <a
+                        href="/contact/?sub=Custom business plan"
+                        class="btn col-btn col-contact-btn"
+                        >Contact Us</a
+                      >
+                    </div>
+                  </th>
+                </tr>
+                <tr>
+                  <td class="col-section" colspan="4">GraphQL</td>
+                </tr>
+                <tr>
+                  <td class="col-item row-title">Queries & Mutations</td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col-item row-title">Schema Definition</td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col-item row-title">Filter, Sort & Paginate</td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col-item row-title">Joins & Nested queries</td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col-item row-title">Cross Database joins</td>
+                  <td>
+                    <span class="material-icons col-option not-enabled"
+                      >cancel</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col-item row-title">Aggregations</td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col-item row-title">Multiple Queries</td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col-item row-title">Support for Transactions</td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col-item row-title">Subscriptions & Live Query</td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col-item row-title">Prepared Queries</td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col-item row-title">Query result caching</td>
+                  <td>
+                    <span class="material-icons col-option not-enabled"
+                      >cancel</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col-item row-title">Query caching</td>
+                  <td>
+                    <span class="material-icons col-option not-enabled"
+                      >cancel</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col-section" colspan="4">File Storage</td>
+                </tr>
+                <tr>
+                  <td class="col-item row-title">Upload / Download files</td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col-item row-title">Folder creations</td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col-item row-title">List files / folders</td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col-item row-title">Delete files / folders</td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col-section" colspan="4">Microservices</td>
+                </tr>
+                <tr>
+                  <td class="col-item row-title">Register your service</td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col-item row-title">GraphQL wrapper</td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col-item row-title">Configuring Secrets</td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col-item row-title">Auto scaling</td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col-item row-title">Allocate resources</td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col-item row-title">Ingres routing</td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col-item row-title">Traffic splitting</td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col-section" colspan="4">Eventing</td>
+                </tr>
+                <tr>
+                  <td class="col-item row-title">Database Events</td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col-item row-title">File Events</td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col-item row-title">Custom Events</td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col-item row-title">Retries & Timeouts</td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col-section" colspan="4">Security</td>
+                </tr>
+                <tr>
+                  <td class="col-item row-title">
+                    Authorization rules for all HTTP requests
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col-item row-title">
+                    Native support for Service Mesh - Istio
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col-item row-title">Whitelisting of services</td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col-section" colspan="4">Team Management</td>
+                </tr>
+                <tr>
+                  <td class="col-item row-title">Role based access control</td>
+                  <td>
+                    <span class="material-icons col-option not-enabled"
+                      >cancel</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option not-enabled"
+                      >cancel</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col-item row-title">Multiple users</td>
+                  <td>
+                    <span class="material-icons col-option not-enabled"
+                      >cancel</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option not-enabled"
+                      >cancel</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col-item row-title">
+                    Audit log of user’s activity
+                  </td>
+                  <td>
+                    <span class="material-icons col-option not-enabled"
+                      >cancel</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option not-enabled"
+                      >cancel</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col-item row-title">
+                    Maker – Checker for config changes
+                  </td>
+                  <td>
+                    <span class="material-icons col-option not-enabled"
+                      >cancel</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option not-enabled"
+                      >cancel</span
+                    >
+                  </td>
+                  <td>
+                    <span class="material-icons col-option enabled"
+                      >check_circle</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col-section" colspan="4">Projects & Databases</td>
+                </tr>
+                <tr>
+                  <td class="col-item row-title">No. of Projects</td>
+                  <td><span class="col-item">1</span></td>
+                  <td><span class="col-item">1</span></td>
+                  <td><span class="col-item">5</span></td>
+                </tr>
+                <tr>
+                  <td class="col-item row-title">No. of Databases</td>
+                  <td><span class="col-item">1</span></td>
+                  <td><span class="col-item">3</span></td>
+                  <td><span class="col-item">No Restrictions</span></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>
+                    <div class="col-heading">
+                      <span class="col-price">Free</span>
+                      <a
+                        href="https://learn.spaceuptech.com/space-cloud/basics/"
+                        class="btn col-btn"
+                        >Get Started</a
+                      >
+                    </div>
+                  </td>
+                  <td>
+                    <div class="col-heading">
+                      <span class="col-price">$150/mo</span>
+                      <a
+                        href="https://console.spaceuptech.com/"
+                        class="btn col-btn"
+                        >Get Started</a
+                      >
+                    </div>
+                  </td>
+                  <td>
+                    <div class="col-heading">
+                      <span class="col-price">Custom</span>
+                      <a
+                        href="/contact/?sub=Custom business plan"
+                        class="btn col-btn col-contact-btn"
+                        >Contact Us</a
+                      >
+                    </div>
+                  </td>
+                </tr>
+              </table>
+
+              <div class="hide-on-large-only">
+                <ul class="collapsible">
+                  <li>
+                    <div class="plan-heading">
+                      <span class="plan-title">Community</span>
+                      <span class="plan-price">Free</span>
+                      <a
+                        href="https://learn.spaceuptech.com/space-cloud/basics/"
+                        class="btn plan-btn"
+                        >Get Started</a
+                      >
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="collapsible-header">GraphQL</div>
+                    <div class="collapsible-body">
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Queries & Mutations</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Schema Definition</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Filter, Sort & Paginate</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Joins & Nested Queries</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Cross Database joins</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Aggregations</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Multiple Queries</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Support for Transactions</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item"
+                          >Subscriptions & Live Query</span
+                        >
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Prepared Queries</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons not-enabled">cancel</span>
+                        <span class="plan-item">Query result caching</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons not-enabled">cancel</span>
+                        <span class="plan-item">Query caching</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="collapsible-header">File Storage</div>
+                    <div class="collapsible-body">
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Upload/Download files</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Folder Creations</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">List fiiles/folders</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Delete files/folders</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="collapsible-header">Microservices</div>
+                    <div class="collapsible-body">
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Register your service</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">GraphQL Wrapper</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Configuring Secrets</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Scaling</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Allocate resources</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Ingres routing</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Traffic splitting</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="collapsible-header">Eventing</div>
+                    <div class="collapsible-body">
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Database Events</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">File Events</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Events for microservices</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Retries & Timeouts</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="collapsible-header">Security</div>
+                    <div class="collapsible-body">
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item"
+                          >Authorization rules for HTTP</span
+                        >
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Native Support for Istio</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Whitelisting of services</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="collapsible-header">Team management</div>
+                    <div class="collapsible-body">
+                      <div class="plan-list">
+                        <span class="material-icons not-enabled">cancel</span>
+                        <span class="plan-item">Role based access control</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons not-enabled">cancel</span>
+                        <span class="plan-item">Multiple users</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons not-enabled">cancel</span>
+                        <span class="plan-item"
+                          >Audit log of user’s activities</span
+                        >
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons not-enabled">cancel</span>
+                        <span class="plan-item">Maker-Checker for configs</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="collapsible-header">Projects & Databases</div>
+                    <div class="collapsible-body">
+                      <div class="plan-list">
+                        <span class="plan-item">No. of Projects:</span>
+                        <span class="plan-item">1</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="plan-item">No. of Databases:</span>
+                        <span class="plan-item">1</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="collapsible">
+                  <li>
+                    <div class="plan-heading">
+                      <span class="plan-title">Pro</span>
+                      <span class="plan-price">$150/mo</span>
+                      <a
+                        href="https://console.spaceuptech.com/"
+                        class="btn plan-btn"
+                        >Get Started</a
+                      >
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="collapsible-header">GraphQL</div>
+                    <div class="collapsible-body">
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Queries & Mutations</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Schema Definition</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Filter, Sort & Paginate</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Joins & Nested Queries</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Cross Database joins</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Aggregations</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Multiple Queries</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Support for Transactions</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item"
+                          >Subscriptions & Live Query</span
+                        >
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Prepared Queries</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Query result caching</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Query caching</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="collapsible-header">File Storage</div>
+                    <div class="collapsible-body">
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Upload/Download files</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Folder Creations</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">List fiiles/folders</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Delete files/folders</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="collapsible-header">Microservices</div>
+                    <div class="collapsible-body">
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Register your service</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">GraphQL Wrapper</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Configuring Secrets</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Scaling</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Allocate resources</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Ingres routing</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Traffic splitting</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="collapsible-header">Eventing</div>
+                    <div class="collapsible-body">
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Database Events</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">File Events</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Events for microservices</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Retries & Timeouts</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="collapsible-header">Security</div>
+                    <div class="collapsible-body">
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item"
+                          >Authorization rules for HTTP</span
+                        >
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Native Support for Istio</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Whitelisting of services</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="collapsible-header">Team management</div>
+                    <div class="collapsible-body">
+                      <div class="plan-list">
+                        <span class="material-icons not-enabled">cancel</span>
+                        <span class="plan-item">Role based access control</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons not-enabled">cancel</span>
+                        <span class="plan-item">Multiple users</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons not-enabled">cancel</span>
+                        <span class="plan-item"
+                          >Audit log of user’s activities</span
+                        >
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons not-enabled">cancel</span>
+                        <span class="plan-item">Maker-Checker for configs</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="collapsible-header">Projects & Databases</div>
+                    <div class="collapsible-body">
+                      <div class="plan-list">
+                        <span class="plan-item">No. of Projects:</span>
+                        <span class="plan-item">1</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="plan-item">No. of Databases:</span>
+                        <span class="plan-item">3</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="collapsible">
+                  <li>
+                    <div class="plan-heading">
+                      <span class="plan-title">Business</span>
+                      <span class="plan-price">Custom</span>
+                      <a
+                        href="/contact/?sub=Custom business plan"
+                        class="btn plan-btn custom"
+                        >Contact us</a
+                      >
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="collapsible-header">GraphQL</div>
+                    <div class="collapsible-body">
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Queries & Mutations</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Schema Definition</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Filter, Sort & Paginate</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Joins & Nested Queries</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Cross Database joins</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Aggregations</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Multiple Queries</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Support for Transactions</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item"
+                          >Subscriptions & Live Query</span
+                        >
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Prepared Queries</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Query result caching</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Query caching</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="collapsible-header">File Storage</div>
+                    <div class="collapsible-body">
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Upload/Download files</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Folder Creations</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">List fiiles/folders</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Delete files/folders</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="collapsible-header">Microservices</div>
+                    <div class="collapsible-body">
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Register your service</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">GraphQL Wrapper</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Configuring Secrets</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Scaling</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Allocate resources</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Ingres routing</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Traffic splitting</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="collapsible-header">Eventing</div>
+                    <div class="collapsible-body">
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Database Events</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">File Events</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Events for microservices</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Retries & Timeouts</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="collapsible-header">Security</div>
+                    <div class="collapsible-body">
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item"
+                          >Authorization rules for HTTP</span
+                        >
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Native Support for Istio</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Whitelisting of services</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="collapsible-header">Team management</div>
+                    <div class="collapsible-body">
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Role based access control</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Multiple users</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item"
+                          >Audit log of user’s activities</span
+                        >
+                      </div>
+                      <div class="plan-list">
+                        <span class="material-icons enabled">check_circle</span>
+                        <span class="plan-item">Maker-Checker for configs</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="collapsible-header">Projects & Databases</div>
+                    <div class="collapsible-body">
+                      <div class="plan-list">
+                        <span class="plan-item">No. of Projects:</span>
+                        <span class="plan-item">5</span>
+                      </div>
+                      <div class="plan-list">
+                        <span class="plan-item">No. of Databases:</span>
+                        <span class="plan-item">No restrictions</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row sections section-enterprise-background">
+        <div class="col s12 l10 offset-l1">
+          <p
+            class="section-description section-enterprise-description enterprise-support-desc"
+          >
+            We are here for your entire enterpise journey from start to finish
+          </p>
+          <div class="outer-card-wrap">
+            <div class="inner-card-wrap">
+              <div
+                id="support-card"
+                class="col s12 l4 community-card enterprise-support-card"
+              >
+                <div class="card-upper">
+                  <div class="small-title">
+                    <img
+                      class="support-img"
+                      src="/images/support.svg"
+                      alt="support"
+                    />
+                    <p class="feature-title card-title support-title">
+                      Support
+                    </p>
+                  </div>
+                  <span
+                    class="material-icons hide-on-large-only"
+                    style="height: 20px; width: 20px; color: #1050d6"
+                    >keyboard_arrow_right</span
+                  >
+                </div>
+                <p class="feature-desc support-desc">
+                  1 to 1 support sessions with SLA guarantees <br />Access to
+                  Space Cloud certified consultants
+                </p>
+                <div
+                  class="hide-on-med-and-down"
+                  style="text-align: center; margin-top: 20px"
+                >
+                  <a
+                    href="/contact/?sub=Support"
+                    class="btn community-feature-btn support-btn"
+                    >Know more</a
+                  >
+                </div>
+              </div>
+              <div
+                id="consult-card"
+                class="col s12 l4 community-card enterprise-support-card"
+              >
+                <div class="card-upper">
+                  <div class="small-title">
+                    <img
+                      class="support-img"
+                      src="/images/consult.svg"
+                      alt="consult"
+                    />
+                    <p class="feature-title card-title support-title">
+                      Consultation
+                    </p>
+                  </div>
+                  <span
+                    class="material-icons hide-on-large-only"
+                    style="height: 20px; width: 20px; color: #1050d6"
+                    >keyboard_arrow_right</span
+                  >
+                </div>
+                <p class="feature-desc support-desc">
+                  20hrs per month of collaborative remote work with your
+                  development team <br />Support for 1 Named Project
+                </p>
+                <div
+                  class="hide-on-med-and-down"
+                  style="text-align: center; margin-top: 20px"
+                >
+                  <a
+                    href="/contact/?sub=Consultation"
+                    class="btn community-feature-btn support-btn"
+                    >Learn more</a
+                  >
+                </div>
+              </div>
+              <div
+                id="train-card"
+                class="col s12 l4 community-card enterprise-support-card"
+              >
+                <div class="card-upper">
+                  <div class="small-title">
+                    <img
+                      class="support-img"
+                      src="/images/training.svg"
+                      alt="training"
+                    />
+                    <p class="feature-title card-title support-title">
+                      Training
+                    </p>
+                  </div>
+                  <span
+                    class="material-icons hide-on-large-only"
+                    style="height: 20px; width: 20px; color: #1050d6"
+                    >keyboard_arrow_right</span
+                  >
+                </div>
+                <p class="feature-desc support-desc">
+                  Train your team to get best out of Spacecloud <br />Programs
+                  around your business goals
+                </p>
+                <div
+                  class="hide-on-med-and-down"
+                  style="text-align: center; margin-top: 20px"
+                >
+                  <a
+                    href="/contact/?sub=Training"
+                    class="btn community-feature-btn support-btn"
+                    >Know more</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12">
+          <div class="sections">
+            <p class="section-title">Still confused? Let us guide you</p>
+            <div class="col s8 m4 offset-s2 offset-m4">
+              <a
+                href="/contact/?sub=Talk to us"
+                class="btn section-btn call-support-btn"
+              >
+                <img
+                  src="/images/call.svg"
+                  alt="multiple projects"
+                  class="support-call-img"
+                />
+                <div class="call-btn-text">
+                  <span>Talk to us</span>
+                  <img
+                    src="/images/east-black-36dp.svg"
+                    alt=""
+                    class="arrow-right"
+                    style="
+                      filter: brightness(0) saturate(100%) invert(29%)
+                        sepia(92%) saturate(2539%) hue-rotate(215deg)
+                        brightness(99%) contrast(104%);
+                    "
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row sections footer-background">
+        <div class="col s12 l10 offset-l1">
+          <p class="section-title footer-section-title">Sign up for Space Cloud Releases and Updates</p>
+          <p class="section-description footer-section-description">Awesome product and community updates; no spam, we promise</p>
+        </div>
+        <div class="col s12 ">
+          <form class="col l7 s10 offset-l1">
+            <input id="subscribe-email" type="email" class="validate email-input" placeholder="Your E-mail address" />
+            <div style="text-align: center;">
+              <span class="subscribe-email-label body-text" style="color: #FF0000;display: none; font-size: 16px; font-family: 'Popins', sans-serif; margin-top: 8px;">Please enter a valid email!</span>
+            </div>
+          </form>
+          <div class="col l3 offset-l1 btn-sec">
+            <button id="subscribe-btn" class="btn section-btn subscribe-btn">Subscribe<div id="loading" class="loading-btn"></div></button>
+          </div>
+        </div>
+        <div class="col s12 l10 offset-l1 divider footer-divider"></div>
+        <div class="col s12 l10 offset-l1">
+          <div class="col l3 s6">
+            <p class="footer-list-title">Space Cloud</p>
+            <ul class="footer-list">
+              <!-- <li class="footer-list-item"><a href="#">About Us</a></li> -->
+              <li class="footer-list-item"><a href="/contact">Contact Us</a></li>
+              <!-- <li class="footer-list-item"><a href="#">Privacy Policy</a></li>
+              <li class="footer-list-item"><a href="#">Terms & Conditions</a></li> -->
+            </ul>
+          </div>
+          <div class="col l3 s6">
+            <p class="footer-list-title">Product</p>
+            <ul class="footer-list">
+              <li class="footer-list-item"><a href="https://github.com/spaceuptech/space-cloud">OpenSource</a></li>
+              <li class="footer-list-item"><a href="/pricing">Pro</a></li>
+              <li class="footer-list-item"><a href="/pricing">Enterprise</a></li>
+            </ul>
+          </div>
+          <div class="col l3 s6">
+            <p class="footer-list-title">Resources</p>
+            <ul class="footer-list">
+              <li class="footer-list-item"><a href="https://blog.spaceuptech.com/">Blog</a></li>
+              <li class="footer-list-item"><a href="https://docs.spaceuptech.com/">Documentation</a></li>
+              <li class="footer-list-item"><a href="https://learn.spaceuptech.com/">Academy</a></li>
+              <li class="footer-list-item"><a href="https://github.com/spaceuptech/space-cloud-samples">Sample Apps</a></li>
+            </ul>
+          </div>
+          <div class="col l3 s6">
+            <p class="footer-list-title">Social</p>
+            <a href="https://www.linkedin.com/company/spaceuptech/" target="_blank"><img src="/images/linkedin.svg" alt="likedin" /></a>
+            <a class="social-link" href="https://www.youtube.com/channel/UCDI38thbdf0sdOIHFdSyvUg" target="_blank"><img src="/images/youtube.svg" alt="youtube" /></a>
+            <a class="social-link" href="https://twitter.com/spaceuptech" target="_blank" ><img src="/images/twitter.svg" alt="twitter"/></a>
+            <p class="footer-list-title">Community</p>
+            <a href="https://github.com/spaceuptech/space-cloud" target="_blank"><img src="/images/github.svg" alt="github" style="height: 24px; width: 24px; filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%)" /></a>
+            <a class="social-link" href="https://discord.com/invite/RkGjW93" target="_blank"><img src="/images/discord.svg" alt="discord" style="height: 24px; width: 24px; filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%)" /></a>
+          </div>
+        </div>
+        <div class="col s12">
+          <p class="copyright-text">© 2020 Space Up Technologies LLP<span class="hide-on-med-and-down">. All Rights Reserved.</span></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      $(".dropdown-trigger").dropdown();
+
+      $(document).ready(function () {
+        $(".collapsible").collapsible();
+      });
+
+      function showSidenav() {
+        document.getElementById("slide-out").classList.toggle("active");
+      }
+
+      if (screen.width < 993) {
+        $("#support-card").click(function () {
+          window.open("/contact/?sub=Support", "_self");
+        });
+        $("#consult-card").click(function () {
+          window.open("/contact/?sub=Consultation", "_self");
+        });
+        $("#train-card").click(function () {
+          window.open("/contact/?sub=Training", "_self");
+        });
+      }
+      /*$('.sidenav').sidenav({ edge: 'right' });
+      window.onscroll = function () {
+        var element = document.getElementById("navbar");
+        if (document.body.scrollTop >= 500) {
+          element.classList.add("scrolled");
+          document.getElementById("topbar-logo").src = "./images/kit/logo-black.svg";
+          document.getElementById("github-icon").src = "./images/github-black.svg";
+        }
+        else if (document.body.scrollTop < 500) {
+          element.classList.remove("scrolled");
+          document.getElementById("topbar-logo").src = "./images/kit/logo-white.svg";
+          document.getElementById("github-icon").src = "./images/github.svg";
+        }
+      }*/
+
+      const stargazers_count = document.getElementById("stargazers_count");
+      const github_stars_count = document.getElementById("github-stars");
+      $.ajax({
+        type: "GET",
+        url: "https://api.spaceuptech.com/v1/site/github-stars",
+        dataType: "json",
+        success: function (data) {
+          stargazers_count.innerText = data.count;
+        },
+        failure: function () {
+          console.log("failed");
+        },
+      });
+    </script>
+    <script src="../js/newsletter.js"></script>
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </body>
+</html>
