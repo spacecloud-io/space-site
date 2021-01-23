@@ -85,7 +85,7 @@
       justify-content: flex-start;
       align-items: flex-start;
       margin-bottom: 70px;
-      height: 15%;
+      height: auto;
       @media #{$medium-and-down}{
         margin-bottom: 37px;
         height: auto;
@@ -207,7 +207,7 @@
     .enterprise-feature{
       margin-bottom: 93px;
       padding: 0 32px;
-      height: 32%;
+      height: auto;
       @media #{$medium-and-down}{
         margin-bottom: 54px;
         height: auto;
