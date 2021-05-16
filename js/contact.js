@@ -106,7 +106,7 @@ $(document).ready(function () {
       $("#submit-btn").addClass("submit-request");
       $("#submit-btn").css({"cursor" : "not-allowed"});
       $("#loading").addClass("loading-active");
-      fetch("https://api.spaceuptech.com/v1/site/contact-us", {
+      fetch("https://api.space-cloud.io/v1/site/contact-us", {
         method: 'POST',
         body: JSON.stringify({ name: name.val(), email: email.val(), subject: subject.val(), msg: msg.val(), source: 'website' }),
         headers: { 'Content-Type': 'application/json' }

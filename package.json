@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/spaceuptech/space-cloud-site.git"
+    "url": "git+https://github.com/spacecloud-io/space-cloud-site.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/spaceuptech/space-cloud-site/issues"
+    "url": "https://github.com/spacecloud-io/space-cloud-site/issues"
   },
-  "homepage": "https://github.com/spaceuptech/space-cloud-site#readme",
+  "homepage": "https://github.com/spacecloud-io/space-cloud-site#readme",
   "dependencies": {
     "sass": "^1.25.0"
   }
