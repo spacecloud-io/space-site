@@ -1,3 +1,9 @@
 [build]
   publish = "./"
   command = "npm run build"
+
+[[redirects]]
+  from = "/*"
+  to = "https://space-cloud.io/:splat"
+  status = 301
+  force = true
