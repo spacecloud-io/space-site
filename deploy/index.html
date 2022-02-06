@@ -372,7 +372,7 @@
       const stargazers_count = document.getElementById("stargazers_count");
       $.ajax({
         type: "GET",
-        url: "https://api.spaceuptech.com/v1/site/github-stars",
+        url: "https://us-east1-space-cloud.cloudfunctions.net/fetch-github-stars",
         dataType: "json",
         success: function (data) {
           stargazers_count.innerText = data.count;
